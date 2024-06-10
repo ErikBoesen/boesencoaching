@@ -1,0 +1,10 @@
+.sass-cache
+.jekyll-metadata
+.bundle
+ruby
+.DS_Store
+_site
+*.swp
+
+# Good to update sometimes but most of the time you don't want to
+Gemfile.lock
