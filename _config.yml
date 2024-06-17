@@ -2,7 +2,7 @@ title: Boesen Coaching
 byline: Placeholder text
 email: boesencoaching@gmail.com
 baseurl: "" # the subpath of the site, e.g. /blog
-url: "http://boesencoaching.com" # the base hostname & protocol for your site
+url: "https://boesencoaching.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
