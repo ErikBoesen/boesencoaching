@@ -7,6 +7,13 @@
   src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v13/22JRxvfANxSmnAhzbFH8PgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2')
   unicode-range: U+0000-00FF
 
+@font-face
+  font-family: 'Lato'
+  font-style: normal
+  font-weight: 700
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2')
+  unicode-range: U+0000-00FF
+
 *
   box-sizing: border-box
   margin: 0
@@ -20,7 +27,7 @@ body
   overflow-x: hidden
 
 a
-  color: #bf2b2b
+  color: #00b5e2
   &:hover
     text-decoration: none
 
@@ -29,7 +36,12 @@ h1, h2, h3
 
 h1
   font-size: 3em
-  font-weight: 100
+
+h2
+  font-weight: bold
+  color: #00b5e2
+  font-size: 3.5em
+  text-transform: uppercase
 
 h4
   font-weight: bold
@@ -51,6 +63,8 @@ header
   width: 100%
   position: absolute
   top: 0
+  #logo
+    width: 80px
   a
     text-decoration: none
     div
@@ -66,13 +80,10 @@ header
     position: relative
     top: -3px
     color: black
-  h2
-    font-size: 3.5em
-    color: #444
-    font-weight: 100
   h3
     font-weight: 200
     margin-left: 4px
+    text-transform: uppercase
 
 #nav-button
   position: fixed
@@ -134,9 +145,6 @@ nav
     font-weight: 300
     &:hover
       background: #f6f6f6
-  > ul > li:nth-child(2) li
-    &:nth-child(2) a, &:nth-child(3) a, &:nth-child(8) a, &:nth-child(9) a, &:nth-child(12) a
-      color: #555
   ul
     ul
       display: none
@@ -189,9 +197,9 @@ article
 
 footer
   text-align: center
-  background: #751f1f
+  background: #00b5e2
   color: white
-  padding-bottom: 30px
+  padding: 30px 0
   width: 100%
   div
     margin-top: 20px
@@ -208,15 +216,6 @@ footer
     color: inherit
   div a
     display: block
-
-.social
-  width: auto
-  margin-right: 15px
-  img
-    cursor: pointer
-    display: inline-block
-    width: 40px
-    margin: 2px
 
 p.heading, h2.heading
   text-align: center
