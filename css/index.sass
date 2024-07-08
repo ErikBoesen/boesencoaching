@@ -1,2 +1,71 @@
 ---
 ---
+.jumbotron
+    padding: 10px 8em
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.contact
+    cursor: default
+    list-style: none
+    margin-top: 20px
+    user-select: none
+
+.contact li
+    display: inline-block
+    margin: 2px
+
+.contact a
+    cursor: pointer
+    border: none
+    text-decoration: none
+
+.contact svg
+    fill: #18304d
+    height: 40px
+    width: 40px
+    border-radius: 50%
+    border: solid 1px #18304d
+    padding: 4px
+    cursor: pointer
+    transition: .3s
+
+.contact a:hover svg, .dark .contact svg
+    transform: rotate(360deg)
+    transition: .5s
+
+.contact li#mail a:hover svg, .dark li#mail svg
+    border-color: #ff6f32
+    fill: #ff6f32
+
+.contact li#github a:hover svg, .dark li#github svg
+    border-color: #3BCE9C
+    fill: #3BCE9C
+
+.contact li#linkedin a:hover svg, .dark li#linkedin svg
+    border-color: #0077B5
+    fill: #0077B5
+
+.contact li#twitter a:hover svg
+    border-color: #fff
+    fill: #fff
+
+.dark li#twitter svg
+    border-color: #55acee
+    fill: #55acee
+
+.contact li#instagram a:hover svg, .dark li#instagram svg
+    border-color: #9b6954
+    fill: #9b6954
+
+.contact li#flickr a:hover svg, .dark li#flickr svg
+    border-color: #FF0084
+    fill: #FF0084
+
+.contact li#night a:hover svg, .dark li#night svg
+    border-color: #ffd966
+    fill: #ffd966
+
+img#headshot
+    max-width: 150px
