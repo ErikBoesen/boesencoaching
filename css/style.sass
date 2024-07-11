@@ -25,6 +25,9 @@ body
   -moz-osx-font-smoothing: grayscale
   width: 100vw
   overflow-x: hidden
+  border-top: solid 10px #00b5e2
+  border-bottom: solid 10px #00b5e2
+  min-height: 100vh
 
 a
   color: #00b5e2
@@ -61,6 +64,10 @@ header
   background: white
   padding: 15px
   width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: center
+  text-align: center
   #logo
     width: 80px
   a
@@ -74,9 +81,7 @@ header
           -webkit-transition: .2s color
           transition: .2s color
   div
-    display: inline-block
     position: relative
-    top: -3px
     color: black
   h3
     font-weight: 200
@@ -165,80 +170,31 @@ nav
       display: block
 
 article
-  padding: 30px 8em
+  padding: 0 30px 10px
+  margin: 0 auto
+  max-width: 10in
   background: white
   line-height: 1.6
   overflow: hidden
-  img, iframe[allowfullscreen]
-    max-width: 420px
-    float: left
-    margin-right: 25px
-  img
-    margin-top: 10px
-    &.right
-      float: right
-      margin-right: 0
-      margin-left: 20px
-  iframe:first-of-type
-    margin-top: 20px
   h1
     text-align: center
   p
     margin: 5px 0
-  p.caption
-    font-size: 1rem
-    font-style: italic
-    max-width: 30em
-  ol, ul
-    padding: .5em 3em
-    overflow: hidden
 
 footer
   text-align: center
-  background: #00b5e2
-  color: white
-  padding: 30px 0
+  color: #00b5e2
+  padding: 10px 0 30px
   width: 100%
-  div
-    margin-top: 20px
-    margin-bottom: 10px
-    width: 15%
-    line-height: 1.4
-    display: inline-block
-    text-align: left
-    vertical-align: top
-    &:nth-of-type(4), &:nth-of-type(6)
-      padding-top: 1.57em
   a
     text-decoration: none
     color: inherit
   div a
     display: block
 
-p.heading, h2.heading
-  text-align: center
-
-.wide-img
-  display: block
-  float: none
-  margin-left: 0px
-  width: 15in
-  max-width: 100%
-
-.calendar
-  width: 25%
-  margin-top: 5px !important
-
-.rtl
-  direction: rtl
-  text-align: right
-  justify-content: right
-
 @media (max-width: 1100px)
   #nav-button
     display: block
-  header img
-    display: none
   nav
     top: 0
     margin: 0
@@ -308,29 +264,10 @@ p.heading, h2.heading
     padding: 20px
     div
       display: none
-  article
-    padding: 15vh 30px 0
-
-  .calendar
-    width: 50%
-
-.centered
-  text-align: center
 
 @media (max-width: 800px)
-  header h3
-    display: none
   article
-    img, iframe[allowfullscreen]
-      width: 100%
-      float: none
-      margin-right: 0
-      margin-bottom: 10px
-    img:nth-of-type(even)
-      float: none
-      margin-left: 0
-  .calendar
-    width: 100%
+    padding: 20px
 
 @media (max-width: 357px)
   article
